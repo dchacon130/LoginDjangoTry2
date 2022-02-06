@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <hr>
+    <form method="POST" action="" name="frmEmail">
+        {% csrf_token %}
+        <p>
+            <label from="email">Email from</label>
+            <input type="text" name="email"/>
+        </p>
+        <p>
+            <label from="mensaje">Mensaje</label>
+            <textarea name="mensaje" cols="30" rows="5"></textarea>
+        </p>
+        <input type="submit" value="Enviar Email" class="btn btn-primary"/>
+    </form>
+{% endblock content %}

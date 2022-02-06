@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Django v2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+        <script src="" async defer></script>
+    </head>
+    <body>
+        <header>
+            Tests Django - v2
+        </header>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'index' %}">Index</a>
+                </li>
+                {% if user.email %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'email' %}">Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div id="content">
+            {% block content %}
+                <!--Codigo de las otras paginas-->
+            {% endblock content %}
+        </div>
+        <footer>
+            <p>Basic Login with Django &copy; Diego Chacón - {% now "d/m/Y h:m:s" %}</p>
+        </footer>
+        
+    </body>
+</html>

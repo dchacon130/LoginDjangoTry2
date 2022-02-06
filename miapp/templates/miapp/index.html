@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <hr>
+    {% if user.email %}
+        <h2>Hola {{ user.first_name }} {{ user.last_name }}</h2>
+        <p>{{ user.email }}</p>
+    {% else %}
+        <h2>Por favor inicie sesión</h2>
+    {% endif %}
+    
+    
+    
+{% endblock content %}

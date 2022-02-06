@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #0f1b36;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    width: 100%;
+    background: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body{
+    text-align: center;
+    background-color: #e2e2e2;
+}
+
+#content{
+    margin-left: 17%;
+    padding: 15px;
+    width: 65%;
+    height: 600px;
+    background: white;
+}
+
+#content h2{
+    padding-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    background: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}

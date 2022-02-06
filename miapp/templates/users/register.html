@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <hr>
+    {{ register_form.errors }}
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p>
+            {{ register_form.first_name.label }}
+            {{ register_form.first_name }}
+        </p>
+        <p>
+            {{ register_form.last_name.label }}
+            {{ register_form.last_name }}
+        </p>
+        <p>
+            {{ register_form.email.label }}
+            {{ register_form.email }}
+        </p>
+        <p>
+            {{ register_form.username.label }}
+            {{ register_form.username }}
+        </p>
+        <p>
+            {{ register_form.password1.label }}
+            {{ register_form.password1 }}
+        </p>
+        <p>
+            {{ register_form.password2.label }}
+            {{ register_form.password2 }}
+        </p>
+
+        <input type="submit" value="Registrarse">
+    </form>
+
+
+{% endblock content %}
