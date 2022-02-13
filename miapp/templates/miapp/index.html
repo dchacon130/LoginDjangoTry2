@@ -1,15 +1,21 @@
 {% extends 'layout.html' %}
 
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
 {% block content %}
     <h2>{{ title }}</h2>
     <hr>
-    {% if user.email %}
-        <h2>Hola {{ user.first_name }} {{ user.last_name }}</h2>
-        <p>{{ user.email }}</p>
-    {% else %}
-        <h2>Por favor inicie sesión</h2>
-    {% endif %}
-    
+    <div class="content-index">
+        {% if user.email %}
+            <h2>Hola {{ user.first_name }} {{ user.last_name }}</h2>
+            <p>{{ user.email }}</p>
+        {% else %}
+            <h2>Por favor inicie sesión <a href="{% url 'login' %}">aquí</a></h2>
+            
+        {% endif %}
+    </div>
     
     
 {% endblock content %}

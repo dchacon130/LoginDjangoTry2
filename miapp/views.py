@@ -21,7 +21,7 @@ from django.utils.encoding import force_bytes
 def index_page(request):
 
     return render(request, 'miapp/index.html', {
-        'title': 'Soy index'
+        'title': 'Index'
     })
 
 def register_page(request):
@@ -40,7 +40,7 @@ def register_page(request):
                 return redirect('index')
 
         return render(request, 'users/register.html', {
-            'title': 'Soy registro',
+            'title': 'Register',
             'register_form': register_form
         })
 
@@ -59,7 +59,7 @@ def login_page(request):
             messages.warning(request, 'Por favor verifique el usuario y contraseña!')
 
     return render(request, 'users/login.html', {
-        'title': 'Soy login'
+        'title': 'Login'
     })
 
 
@@ -70,7 +70,7 @@ def logout_page(request):
 def about_page(request):
 
     return render(request, 'miapp/about.html', {
-        'title': 'Soy about'
+        'title': 'About'
     })
 
 def email_page(request):
@@ -90,7 +90,7 @@ def email_page(request):
         return redirect('/inicio')
 
     return render(request, 'miapp/email.html', {
-        'title': 'Soy Email'
+        'title': 'Email'
     })
 
 

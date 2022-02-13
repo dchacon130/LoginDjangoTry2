@@ -1,30 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
+    width: 1500px;
+    height: 220px;
+    margin: 0px auto;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #0f1b36;
-    font-size: 50px;
+    padding-top: 25px;
+}
+
+#logo{
+    width: 60%;
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#logo img{
+    display: block;
+    float: left;
+    padding-left: 14%;
+}
+
+#logo h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    float: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 35px;
+    margin-left: 10px;
 }
 
-nav{
-    width: 100%;
-    background: black;
-    padding-top: 15px;
-    padding-bottom: 15px;
+#logo_small{
+    width: 25%;
+    height: 45px;
+    margin: 0 auto;
 }
 
-body{
+.nav-div{
+    width: 65%;
+    height: max-content;
+    margin-left: 17%;
+    border-style: none;
+}
+
+.nav-div ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+    position: sticky;
+}
+
+li{
+    float: left;
+}
+
+.start{
+    float: right;
+}
+
+.active{
+    background-color: #e5e5e5;
+}
+
+.nav-div li a{
+    display: block;
+    color: #091e2d;
     text-align: center;
-    background-color: #e2e2e2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-div li a:hover{
+    background-color: #091e2d;
+    color: white;
 }
 
 #content{
     margin-left: 17%;
     padding: 15px;
     width: 65%;
-    height: 600px;
-    background: white;
+    height: max-content;
+    background: #e5e5e5;
+    border-style: none;
 }
 
 #content h2{
@@ -32,9 +97,94 @@ body{
 }
 
 footer{
+    text-align: center;
+    width: 65%;
+    height: 45px;
+    padding: 15px;
+    margin-left: 17%;
+    background: #e5e5e5;
+    color: #091e2d;
+}
+
+h2{
+    padding: 30px;
+}
+
+#experience_year{
+    padding-bottom: 40px;
+}
+
+.content-index{
     width: 100%;
-    background: black;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: white;
+    padding: 70px;
+    text-align: center;
+    border-style: none;
+}
+
+.content-index h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-index a{
+    display: block;
+    color: #0f0500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-form{
+    width: 50%;
+    height: max-content;
+    padding: 35px;
+    border-style: none;
+}
+
+.login-form input{
+    width: 100%;
+}
+
+.login-form input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.login-form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.login-form input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.login-form input[type=submit]{
+    background-color: #ace4e2;
+    border: none;
+    color: #747a7e;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.login-form input[type=submit]:hover{
+    background-color: #87bfda;
+    color: #e5e5e5;
+}
+
+.about-div{
+    padding: 15px 25px;
 }

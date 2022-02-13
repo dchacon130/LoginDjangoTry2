@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bootstrap5',
     'miapp',
     'crispy_forms',
+    'portfolio'
 ]
 
 MIDDLEWARE = [

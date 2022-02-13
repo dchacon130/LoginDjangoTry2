@@ -1,22 +1,26 @@
 {% extends 'layout.html' %}
 
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
 {% block content %}
     <h2>{{ title }}</h2>
     <hr>
-    {{ message }}
+    <div class="login-form">
+        {{ message }}
+        <form method="POST" action="">
+            {% csrf_token %}
 
-    <form method="POST" action="">
-        {% csrf_token %}
-
-        <p>
-            <label from="username">Usuario</label>
-            <input type="text" name="username"/>
-        </p>
-        <p>
-            <label from="password">Contraseña</label>
-            <input type="password" name="password"/>
-        </p>
-        <input type="submit" value="Login" class="btn btn-primary"/>
-    </form>
-
+            <p>
+                <label from="username">Usuario</label>
+                <input type="text" name="username"/>
+            </p>
+            <p>
+                <label from="password">Contraseña</label>
+                <input type="password" name="password"/>
+            </p>
+            <input type="submit" value="Login" class="btn btn-primary"/>
+        </form>
+    </div>
 {% endblock content %}
