@@ -1,89 +1,33 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    width: 1500px;
-    height: 220px;
-    margin: 0px auto;
-    text-align: center;
-    padding-top: 25px;
+.bg-img {
+    background-image: url("../../static/img/wallpaper.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400%;
 }
 
-#logo{
-    width: 60%;
-    height: 130px;
-    margin: 0 auto;
-    padding-top: 10px;
-}
-
-#logo img{
-    display: block;
-    float: left;
-    padding-left: 14%;
-}
-
-#logo h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: block;
-    float: left;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin-top: 35px;
-    margin-left: 10px;
-}
-
-#logo_small{
-    width: 25%;
-    height: 45px;
-    margin: 0 auto;
-}
-
-.nav-div{
-    width: 65%;
-    height: max-content;
-    margin-left: 17%;
+.nav-container{
+    width: 100%;
+    height: 60px;
     border-style: none;
 }
 
-.nav-div ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #e5e5e5;
-    position: sticky;
-}
-
-li{
-    float: left;
-}
-
-.start{
-    float: right;
-}
-
-.active{
-    background-color: #e5e5e5;
-}
-
-.nav-div li a{
-    display: block;
-    color: #091e2d;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav-div li a:hover{
-    background-color: #091e2d;
-    color: white;
-}
-
 #content{
+    margin-left: 17%;
+    padding: 15px;
+    width: 65%;
+    height: max-content;
+    background: #e5e5e5;
+    border-style: none;
+}
+#content2{
     margin-left: 17%;
     padding: 15px;
     width: 65%;
@@ -95,6 +39,7 @@ li{
 #content h2{
     padding-bottom: 20px;
 }
+
 
 footer{
     text-align: center;
