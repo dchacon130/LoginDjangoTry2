@@ -54,12 +54,13 @@ def login_page(request):
 
         if user is not None:
             login(request, user)
-            return redirect('/inicio')
+            return redirect('/index')
         else:
-            messages.warning(request, 'Por favor verifique el usuario y contraseña!')
+            messages.warning(request, 'No pudeste loguear jajaja')
 
     return render(request, 'users/login.html', {
-        'title': 'Login'
+        'title': 'Login',
+        'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     })
 
 
@@ -87,7 +88,7 @@ def email_page(request):
             [email],
             fail_silently=False
         )
-        return redirect('/inicio')
+        return redirect('/index')
 
     return render(request, 'miapp/email.html', {
         'title': 'Email'

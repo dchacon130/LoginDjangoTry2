@@ -9,15 +9,38 @@
     <hr>
     <div class="container" id='portfolio'>
         <div class="row">
-            <div class="col col-lg-7">
+            <div class="col-md-6">
                 {% for portfolio in portfolios %}
                     <h3>{{portfolio.title}}</h3>
                     <p>Description: {{portfolio.description}}</p>
                     <p id="experience_year">Experience Year: <strong>{{portfolio.experience}}</strong></p>
                 {% endfor %}
             </div>
-            <div class="col-md-auto">
-                One of three columns
+            <div class="col-md-4" id="new_experience">
+
+                <h2>Create new experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis vitae mauris accumsan, rutrum nisl ac, luctus turpis. 
+                    Aenean consequat scelerisque nibh sed ullamcorper.</p>
+
+                {{ message }}
+                <form method="POST" action="" class="row g-3">
+                    <div class="col-md-6">
+                        <label form="title">Title:</label>
+                        <input type="text" name="title"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label form="years">Years:</label>
+                        <input type="number" name="years"/>
+                        </div>
+                    <div>
+                        <label from="description">Description</label><br>
+                        <textarea name="mensaje" cols="60" rows="8"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

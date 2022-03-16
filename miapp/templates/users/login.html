@@ -6,25 +6,20 @@
 
 {% block content %}
     <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
     <hr>
     <div class="login-form d-grid gap-2">
         {{ message }}
         <form method="POST" action="">
             {% csrf_token %}
-            <p>
-                <label from="username">User</label>
-            </p>
-            <p>
-                <input type="text" name="User" placeholder="User"/>
-            </p>
-            <p>
-                <label from="password">Password</label>
-            </p>
-            <p>
-                <input type="password" name="password" placeholder="Password"/>
-            </p>
-            
-            <input type="submit" value="Login" class="btn btn-primary"/>
+
+            <label form="username">Nombre de usuario:</label>
+            <input type="text" name="username"/>
+
+            <label form="password">Contraseña:</label>
+            <input type="password" name="password"/>
+
+            <input type="submit" value="Login"/>
         </form>
     </div>
 {% endblock content %}
