@@ -3,133 +3,23 @@
     padding: 0px;
 }
 
-.bg-img {
-    background-image: url("../../static/img/wallpaper.jpg");
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 400%;
+body{
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
-.nav-container{
-    width: 100%;
-    height: 60px;
+.content{
+    width: 70%;
+    height: 830px;
+    margin-left: 15%;
+    padding: 10px 25px;
     border-style: none;
 }
-
-#content{
-    margin-left: 17%;
-    padding: 15px;
-    width: 65%;
-    height: max-content;
-    background: #e5e5e5;
-    border-style: none;
-}
-#content2{
-    margin-left: 17%;
-    padding: 15px;
-    width: 65%;
-    height: max-content;
-    background: #e5e5e5;
-    border-style: none;
-}
-
-#content h2{
-    padding-bottom: 20px;
-}
-
 
 footer{
-    text-align: center;
-    width: 65%;
-    height: 45px;
-    padding: 15px;
-    margin-left: 17%;
-    background: #e5e5e5;
-    color: #091e2d;
-}
-
-h2{
-    padding: 30px;
-}
-
-#experience_year{
-    padding-bottom: 40px;
-}
-
-.content-index{
     width: 100%;
-    padding: 70px;
+    height: 50px;
+    padding-top: 10px;
     text-align: center;
     border-style: none;
-}
-
-.content-index h2{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.content-index a{
-    display: block;
-    color: #0f0500;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.login-form{
-    width: 50%;
-    height: max-content;
-    padding: 35px;
-    border-style: none;
-}
-
-.login-form input{
-    width: 100%;
-}
-
-.login-form input[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-.login-form textarea{
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-}
-
-.login-form input[type=password]{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-.login-form input[type=submit]{
-    background-color: #ace4e2;
-    border: none;
-    color: #747a7e;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-.login-form input[type=submit]:hover{
-    background-color: #87bfda;
-    color: #e5e5e5;
-}
-
-.about-div{
-    padding: 15px 25px;
 }

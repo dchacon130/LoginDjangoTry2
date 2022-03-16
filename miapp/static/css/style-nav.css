@@ -1,22 +1,20 @@
-
 .nav-div{
     width: 100%;
     height: max-content;
     border-style: none;
+    opacity: 0.5;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-.nav-div nav ul{
+.nav-div ul{
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+    padding: 10px 15px;
     overflow: hidden;
-    background-color: #e5e5e5;
+    background-color: white;
     position: sticky;
     border-style: none;
-}
-
-.div-log{
-    font-size: 25px;
 }
 
 li{
@@ -25,15 +23,16 @@ li{
 
 .start{
     float: right;
+    padding-right: 25px;
 }
 
 .active{
-    background-color: #e5e5e5;
+    background-color: white;
 }
 
 .nav-div li a{
     display: block;
-    color: #091e2d;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -41,6 +40,6 @@ li{
 }
 
 .nav-div li a:hover{
-    background-color: #091e2d;
+    background-color: black;
     color: white;
 }
