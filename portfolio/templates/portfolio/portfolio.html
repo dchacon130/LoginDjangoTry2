@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <hr>
+    <div >
+        <div class="row">
+            <div class="col-md-6" id="portfolio">
+                {% for portfolio in portfolios %}
+                    <div id="portfolio-detail">
+                        <h3>{{portfolio.title}}</h3>
+                        <p>Description: {{portfolio.description}}</p>
+                        <p id="experience_year">Experience Year: <strong>{{portfolio.experience}}</strong></p>
+                        <p>Knowledge level: {{know.description}} |</p>
+                        <a href="{% url 'delete-portfolio' portfolio.id %}" class="btn btn-danger">Delete</a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-5" id="new_experience">
+                <div id="portfolio-form-hide">
+                    <h2>Create new experience</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Duis vitae mauris accumsan, rutrum nisl ac, luctus turpis. 
+                        Aenean consequat scelerisque nibh sed ullamcorper.</p>
+
+                    {{ message }}
+                    <form method="POST" action="{% url 'save' %}" class="row g-3">
+
+                        {% csrf_token  %}
+
+                        <div class="col-md-6">
+                            <label form="title">Title:</label>
+                            <input type="text" name="title"/>
+                        </div>
+                        <div class="col-md-6">
+                            <label form="years">Years:</label>
+                            <input type="number" name="years"/>
+                        </div>
+                        <div>
+                            <label form="knowledge">Knowledge:</label>
+                            <select name="knowledge">
+                                {% for knowledge in knowledges%}
+                                    <option value="{{knowledge.id}}">{{knowledge.description}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div>
+                            <label from="description">Description</label><br>
+                            <textarea name="description" cols="60" rows="8"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button id="save-portfolio" type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="portfolio-form-show">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Add new portfolio experience</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% endblock content %}

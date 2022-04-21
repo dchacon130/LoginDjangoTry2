@@ -1,10 +1,11 @@
 from django.contrib import admin
-from .models import Portfolio
+from .models import Portfolio, Knowledge
 
 # Register your models here.
 admin.site.register(Portfolio)
+admin.site.register(Knowledge)
 
-title = "Proyects"
+titleProyects = "Proyects"
 
-admin.site.site_header = title
-admin.site.site_title = title
+admin.site.site_header = titleProyects
+admin.site.site_title = titleProyects

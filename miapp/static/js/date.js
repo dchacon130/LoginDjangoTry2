@@ -1,7 +1,7 @@
 'use strict'
 
 window.addEventListener('load', () => {
-    console.log('DOM cargado correctamente!');
+    console.log('The document is ready to work with Moment.js');
 
     function datewithmomentjs(){
         var time = setInterval( () => {
