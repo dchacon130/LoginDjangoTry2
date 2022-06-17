@@ -43,7 +43,6 @@ def save_porfolio(request):
         return redirect('portfolio')
 
 def delete_portfolio(request, id):
-    portfolio_deleted = Portfolio.objects.get(pk=id)
-    portfolio_deleted.delete()
+    
 
     return redirect('portfolio')

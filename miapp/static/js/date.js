@@ -14,6 +14,7 @@ window.addEventListener('load', () => {
         return time;
     }
 
+    
     try{
         datewithmomentjs();
     }catch(e){

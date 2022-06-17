@@ -10,13 +10,15 @@
     <div >
         <div class="row">
             <div class="col-md-6" id="portfolio">
+                <a id="demo"></a>
                 {% for portfolio in portfolios %}
                     <div id="portfolio-detail">
+                        <a id="register_number">{{ portfolio.id }}</a>
                         <h3>{{portfolio.title}}</h3>
                         <p>Description: {{portfolio.description}}</p>
                         <p id="experience_year">Experience Year: <strong>{{portfolio.experience}}</strong></p>
                         <p>Knowledge level: {{know.description}} |</p>
-                        <a href="{% url 'delete-portfolio' portfolio.id %}" class="btn btn-danger">Delete</a>
+                        <button onclick="popupclick()" class="btn btn-danger">Delete</button>
                     </div>
                 {% endfor %}
             </div>
@@ -62,6 +64,8 @@
                 </div>
                 
             </div>
+
+            
         </div>
     </div>
 {% endblock content %}

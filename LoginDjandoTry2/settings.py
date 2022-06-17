@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap5',
+    'bootstrap_modal_forms',
     'miapp',
     'crispy_forms',
     'portfolio'
@@ -135,9 +136,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # ENVIO DE EMAILS
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'smarthotel.speeron@gmail.com'
-EMAIL_HOST_PASSWORD = 'F34relfo'
-EMAIL_PORT = 587
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.hostinger.com'
+EMAIL_HOST_USER = 'info@diegochacon.com.co'
+EMAIL_HOST_PASSWORD = 'F34rdiego.,'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True

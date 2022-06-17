@@ -1,3 +1,5 @@
+'use strinct'
+
 $(()=> {
     console.log('The document is ready to work with JQuery');
 
